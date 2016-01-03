@@ -1,21 +1,29 @@
 $("#p1").click(function(){
   $("#project").html('<img style="height:130px;width:205px" src="../assets/images/project1.png" />');
-  $("#github").html('For detailed information on Othello, click on the Octocat!');
+  $("#github").html('For detailed information on Othello, click on the Octocat, or click the Macbook for a larger image!');
   $("#link").html('<a href="https://github.com/andyjinkim/andyjinkim/tree/master/assignments/othello_project_2/othello_project"><img style="width:100px;height:auto" src="../assets/images/octocat3.png" /></a>')
 })
 
 $("#p2").click(function(){
   $("#project").html('<img style="height:130px;width:205px" src="../assets/images/project2.png" />');
-  $("#github").html('For detailed information on CliMate, click on the Octocat!');
+  $("#github").html('For detailed information on CliMate, click on the Octocat, or click the Macbook for a larger image!');
   $("#link").html('<a href="https://github.com/andyjinkim/SEAFOAM-s-CliMate-Project"><img style="width:100px;height:auto" src="../assets/images/octocat3.png" /></a>')
 })
 
 $("#p3").click(function(){
   $("#project").html('<img style="height:130px;width:205px" src="../assets/images/project3.png" />');
-  $("#github").html('For detailed information on TopOut, click on the Octocat!');
+  $("#github").html('For detailed information on TopOut, click on the Octocat, or click the Macbook for a larger image!');
   $("#link").html('<a href="https://github.com/andyjinkim/topout-climbing-app"><img style="width:100px;height:auto" src="../assets/images/octocat3.png" /></a>')
 })
 
+
+$("#project").click(function(){
+  $(".ui.modal").modal("show")
+})
+
+$(window).load(function() {
+  $('.flexslider').flexslider();
+});
 
 $(document)
   .ready(function() {

@@ -5,8 +5,8 @@
   <script src="../assets/js/homepage.js"></script>
 </head>
 
-<body id="home">
-
+<body>
+<div id="toppage"></div>
 <div class="imagebackground">
   <section class="cd-intro">
       <h1 class="cd-headline letters type">
@@ -22,30 +22,30 @@
   </section>
 </div>
 <div class="ui vertical feature raised blue segment features-session" style="background-color:gray">
-  <div class="ui centered page grid" style="margin-bottom:35px;">
+  <div class="ui centered page grid" style="margin-bottom:35px;" id="projects">
     <div class="fourteen wide column">
       <div class="ui three column center aligned stackable divided grid">
         <!--  -->
         <div class="column column-feature" style="margin-top:55px">
             <span class="helper"></span>
-            <button class="ui inverted blue basic button" id="p1" style="width:150px;">See Othello!</button><br><br>
+            <button class="ui inverted blue basic button" id="p1" style="width:150px">See Othello!</button><br><br>
             <span class="helper"></span>
-            <button class="ui inverted blue basic button" id="p2" style="width:150px;">See CliMate!</button><br><br>
+            <button class="ui inverted blue basic button" id="p2" style="width:150px">See CliMate!</button><br><br>
             <span class="helper"></span>
-            <button class="ui inverted blue basic button" id="p3" style="width:150px;">See TopOut!</button>
+            <button class="ui inverted blue basic button" id="p3" style="width:150px">See TopOut!</button>
         </div>
         <!--  -->
         <div class="column column-feature" style="margin-top:55px">
           <div class="ui icon header">
-            <span class="helper"></span><img style="width:275px;height:auto;position:relative" class="maci gotbook" src="../assets/images/macbook.png">
-            <div style="height:129px;width:205px;position:absolute;top:29;left:51" id="project"></div>
+            <span class="helper"></span><img style="width:275px;height:auto;position:relative" class="macbook" src="../assets/images/macbook.png">
+            <div style="height:129px;width:205px;position:absolute;top:29;left:69" id="project"></div>
           </div>
         </div>
         <div class="column column-feature" style="margin-top:55px">
           <div class="ui icon header" id="link">
             <a href="https://github.com/andyjinkim"><img style="width:100px;height:auto" src="../assets/images/octocat3.png" /></a>
           </div>
-          <p style="color:white" id="github">For detailed information on projects, click on the Octocat!</p>
+          <p style="color:white" id="github">For detailed information on projects, click on the Octocat, or click the Macbook for a larger image!</p>
         </div>
       </div>
     </div>
@@ -55,10 +55,10 @@
 <!-- //////////////////////////////////////////////// -->
 <!-- //////////////////////////////////////////////// -->
 <!-- //////////////////////////////////////////////// -->
-<div class="ui vertical feature raised blue segment features-session" style="background-color:gray">
+<div class="ui vertical feature raised blue segment features-session" style="background-color:gray" id="contact">
   <div class="ui centered page grid" style="margin-bottom:35px">
     <div class="fourteen wide column">
-      <div class="ui three column center aligned stackable divided grid">
+      <div class="ui three column center aligned stackable divided grid" style="margin-bottom:10px">
         <!--  -->
         <div class="column column-feature" style="margin-top:55px">
             <!-- <span class="helper"></span> -->
@@ -88,20 +88,20 @@
             <div class="item" style="color:white">
               <i class="github icon"></i>
               <div class="content">
-                <a href="www.github.com/andyjinkim" style="color:white">Andy's GitHub</a>
+                <a href="http://www.github.com/andyjinkim" style="color:white">Andy's GitHub</a>
               </div>
             </div>
             <!--  -->
             <div class="item" style="color:white">
               <i class="mail icon"></i>
               <div class="content">
-                <a href="mailto:jack@semantic-ui.com" style="color:white">andyjinkim@gmail.com</a>
+                <a href="mailto:andyjinkim@gmail.com" style="color:white">andyjinkim@gmail.com</a>
               </div>
             </div>
             <div class="item" style="color:white">
               <i class="linkedin icon"></i>
               <div class="content">
-                <a href="http://www.semantic-ui.com" style="color:white">Andy's LinkedIn</a>
+                <a href="http://www.linkedin.com/andyjinkim" style="color:white">Andy's LinkedIn</a>
               </div>
             </div>
           </div>
@@ -110,4 +110,31 @@
     </div>
   </div>
 </div>
+
+  <div class="ui modal">
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <img style="width:600px;height:auto;position:relative;margin-left:150px" class="macbook" src="../assets/images/macbook.png">
+          <div style="height:129px;width:205px;position:absolute;top:24;left:225" id="project"><img style="height:282px;width:450px" src="../assets/images/project1.png" /></div>
+        </li>
+        <li>
+          <img style="width:600px;height:auto;position:relative;margin-left:150px" class="macbook" src="../assets/images/macbook.png">
+          <div style="height:129px;width:205px;position:absolute;top:24;left:225" id="project"><img style="height:282px;width:450px" src="../assets/images/project2.png" /></div>
+        </li>
+        <li>
+          <img style="width:600px;height:auto;position:relative;margin-left:150px" class="macbook" src="../assets/images/macbook.png">
+          <div style="height:129px;width:205px;position:absolute;top:24;left:225" id="project"><img style="height:282px;width:450px" src="../assets/images/project3.png" /></div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <img style="width:295px;height:auto;position:relative" class="macbook" src="../assets/images/macbook.png">
+    <div style="height:129px;width:205px;position:absolute;top:12;left:35" id="project"><img style="height:139px;width:223px" src="../assets/images/project1.png" /></div>
+    <img style="width:295px;height:auto;position:relative" class="macbook" src="../assets/images/macbook.png">
+    <div style="height:129px;width:205px;position:absolute;top:12;left:336" id="project"><img style="height:139px;width:223px" src="../assets/images/project2.png" /></div>
+    <img style="width:295px;height:auto;position:relative" class="macbook" src="../assets/images/macbook.png">
+    <div style="height:129px;width:205px;position:absolute;top:12;left:635" id="project"><img style="height:139px;width:223px" src="../assets/images/project3.png" /></div> -->
+  </div>
+
 </body>
