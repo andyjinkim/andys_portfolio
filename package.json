@@ -1,5 +1,5 @@
 {
-  "name": "topout-climbing-app",
+  "name": "andys_portfolio",
   "version": "1.0.0",
   "description": "<!-- comments -->",
   "main": "server.js",
@@ -8,14 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/djmcquillan/topout-climbing-app.git"
+    "url": "git+https://github.com/andyjinkim/andys_portfolio.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/djmcquillan/topout-climbing-app/issues"
-  },
-  "homepage": "https://github.com/djmcquillan/topout-climbing-app#readme",
+  "homepage": "https://github.com/andyjinkim/andys_portfolio",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "better-console": "^0.2.4",
