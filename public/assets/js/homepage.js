@@ -1,8 +1,3 @@
-
-
-
-
-///////////////////////////////////// 
 $("#p1").click(function(){
   $("#project").html('<span class="helper"></span><img style="width:275px;height:auto;position:relative" class="macbook" src="../assets/images/macbookp1.png">');
   $("#github").html('For detailed information on Othello, click on the Octocat, or click the Macbook for a larger image!');
@@ -20,8 +15,11 @@ $("#p3").click(function(){
   $("#github").html('For detailed information on TopOut, click on the Octocat, or click the Macbook for a larger image!');
   $("#link").html('<a href="https://github.com/andyjinkim/topout-climbing-app"><img style="width:100px;height:auto" src="../assets/images/octocat3.png" /></a>')
 })
-
-
+//
+// $(".macbook").mouseover(function(){
+//   $("#project").html('<span class="helper"></span><img style="width:275px;height:auto;position:relative" class="macbook" src="../assets/images/macbookhover.png">');
+// })
+//
 $("#project").click(function(){
   $(".ui.modal").modal("show")
 })
