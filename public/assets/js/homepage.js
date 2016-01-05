@@ -1,7 +1,7 @@
 $("#p1").click(function(){
   $("#project").html('<span class="helper"></span><img style="width:275px;height:auto;position:relative" class="macbook" src="../assets/images/macbookp1.png">');
   $("#github").html('For detailed information on Othello, click on the Octocat, or click the Macbook for a larger image!');
-  $("#link").html('<a href="https://github.com/andyjinkim/andyjinkim/tree/master/assignments/othello_project_2/othello_project" target="_blank"><img style="width:100px;height:auto" src="../assets/images/octocat3.png" /></a>')
+  $("#link").html('<a href="https://github.com/andyjinkim/andyjinkim.github.io" target="_blank"><img style="width:100px;height:auto" src="../assets/images/octocat3.png" /></a>')
 })
 
 $("#p2").click(function(){
