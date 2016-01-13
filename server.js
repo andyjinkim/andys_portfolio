@@ -8,19 +8,12 @@ var config     = require('./serverSide/config')
 var path       = require('path')
 // var apiRouter  = require('./serverSide/apiRoutes/userRoutes')
 
+app.set('view engine', 'html')
 
 //Connect to the database (using mongoose)
 // mongoose.connect(config.database)
 
 app.use(express.static(path.join(__dirname, 'public')))
-
-//Configuration our app to handle CORS requests/errors
-// app.use(function(req,res,next){
-//   res.setHeader('Access-Control-Allow-Origin', '*')
-//   res.setHeader('Access-Control-Allow-Methods', 'GET, POST')
-//   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, authorization')
-//   next()
-// })
 
 // Middleware
 //log all requests to the console
@@ -29,9 +22,15 @@ app.use(logger('dev'))
 app.use( bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 
-// Redirects invalid URLS to Index.html
+app.get('/', function(req,res){
+	console.log('getting index?')
+	res.render('index')
+})
+
+// Redirects invalid URLS to render
 app.get('*', function (req,res){
-  res.sendFile(path.join(__dirname+ '/public/index.html'))
+  console.log('attempting to ')
+  res.render('index')
 })
 
 // app.all('/*', function(req, res, next) {
@@ -39,10 +38,7 @@ app.get('*', function (req,res){
 //     res.sendFile('/public/index.html', { root: __dirname });
 // });
 
-app.get('/', function(req,res){
-	console.log('getting index?')
-	res.render('index')
-})
+
 //Start the Server
 // app.use('/api', apiRouter)
 
